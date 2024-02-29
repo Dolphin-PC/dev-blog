@@ -8,7 +8,7 @@
 
 ## 비동기 함수 종류
 
-### callback
+### 1. callback
 
 - callback함수란, 다른 함수의 파라미터로 전달하여, 실행될 수 있는 함수입니다.
 
@@ -40,7 +40,7 @@ fn(callback);
 > 장점보다 단점이 큽니다.<br/>
 > 콜백함수를 이용한 비동기처리는 고전적인 방법으로, 현재는 많이 사용되지 않습니다.
 
-### Promise
+### 2. Promise
 
 - Promise는 callback을 이용한 비동기처리 방법을 개선한 `객체`입니다.
 - es6문법
@@ -79,12 +79,12 @@ api()
 
 - es6문법으로, es6미만에서의 지원불가
 - 조건 분기에 의해서 Promise체이닝을 이어가는 경우, 가독성이 떨어집니다. [관련글](https://mong-blog.tistory.com/entry/promise%EC%99%80-async-await%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
-- 비동기결과값은 then 함수안에서만 처리가 가능하다.
+- 비동기결과값은 then 함수안에서만 처리가 가능합니다.
 
 > Promise는 callback비동기처리를 많이 개선한 방법으로, 현재도 많이 사용되곤 합니다. <br/>
-> 하지만 여러 비동기처리를 할때, 가독성과 에러처리에 대한 부분이 미흡하다.
+> 하지만 여러 비동기처리를 할때, 가독성과 에러처리에 대한 부분이 미흡합니다.
 
-### async-await
+### 3. async-await
 
 - async와 await키워드로 Promise를 편하게 사용합니다.
 - es8
